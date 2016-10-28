@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GitHub</string>
+    <string name="title_detail">User Detail</string>
+    <string name="action_favorite">favourites</string>
+</resources>

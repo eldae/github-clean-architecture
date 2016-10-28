@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="24dp"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="24dp"
+        tools:ignore="ScrollViewSize">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            tools:background="@android:color/holo_blue_bright"
+            tools:src="@android:drawable/btn_star_big_off"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/logo"
+            android:layout_toRightOf="@+id/logo"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:text="Name very long askldf jlaks flksja fd fdas fsda f"/>
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:autoLink="web"
+            android:drawableLeft="@drawable/ic_open_in_browser_black_24px"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_open_in_browser_black_24px"
+            android:paddingTop="24dp"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            tools:text="www.google.com"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@android:drawable/btn_star"
+            app:elevation="4dp"/>
+    </RelativeLayout>
+
+</ScrollView>
+
