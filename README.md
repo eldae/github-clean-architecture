@@ -3,7 +3,9 @@
 A sample Android project showcasing MVP and clean architecture.
 
 Inspired by:
+
 [The Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)
+
 [Android-CleanArchitecture](https://github.com/android10/Android-CleanArchitecture)
 
 License
