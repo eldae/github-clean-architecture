@@ -129,6 +129,9 @@ public class UserListPresenter implements UserListMVP.Presenter {
                 } else {
                     action = removeItem(favouriteDomainModel);
                 }
+                if (!getUsersSubscription.isUnsubscribed()) {
+                    getUsersSubscription.unsubscribe();
+                }
                 getUsersSubscription = interactor.getUsers()
                                                  .map(userDomainModels -> mapper.map(userDomainModels))
                                                  .observeOn(uiScheduler)
